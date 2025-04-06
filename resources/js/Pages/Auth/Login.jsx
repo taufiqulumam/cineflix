@@ -18,7 +18,7 @@ export default function Login() {
         };
     }, []);
 
-    const handleOnChange = (event) => {
+    const onHandleChange = (event) => {
         setData(event.target.name, event.target.value);
     };
 
@@ -52,13 +52,13 @@ export default function Login() {
                             <div className="flex flex-col gap-6">
                                 <div>
                                     <InputLabel value="Email Address"/>
-                                    <TextInput type="email" name="email" value={data.email} placeholder="Email Address" isFocused={true} handleChange={handleOnChange}/>
+                                    <TextInput type="email" name="email" value={data.email} placeholder="Email Address" isFocused={true} handleChange={onHandleChange}/>
 
                                     <InputError message={errors.email} className="mt-2"/>
                                 </div>
                                 <div>
                                     <InputLabel value="Password"/>
-                                    <TextInput type="password" name="password" value={data.password} placeholder="Password" handleChange={handleOnChange}/>
+                                    <TextInput type="password" name="password" value={data.password} placeholder="Password" handleChange={onHandleChange}/>
 
                                     <InputError message={errors.password} className="mt-2"/>
                                 </div>
