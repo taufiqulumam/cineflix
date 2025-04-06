@@ -32,7 +32,7 @@ export default forwardRef(function TextInput({
         autoComplete: PropTypes.string,
         required: PropTypes.bool,
         isFocused: PropTypes.bool,
-        // handleChange: PropTypes.func,
+        handleChange: PropTypes.func,
         placeholder: PropTypes.string,
         isError: PropTypes.bool
     };
@@ -50,7 +50,7 @@ export default forwardRef(function TextInput({
                 placeholder={placeholder}
                 autoComplete={autoComplete}
                 required={required}
-                // onChange={e => handleChange(e)}
+                onChange={e => handleChange(e)}
             />
         </div>
     );

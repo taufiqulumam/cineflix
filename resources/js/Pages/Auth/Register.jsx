@@ -53,25 +53,25 @@ export default function Register() {
                             <div className="flex flex-col gap-6">
                                 <div>
                                     <InputLabel value="Full Name"/>
-                                    <TextInput type="text" name="name" placeholder="Your Full Name" value={data.name} isFocused={true} onChange={handleOnChange} required />
+                                    <TextInput type="text" name="name" placeholder="Your Full Name" value={data.name} isFocused={true} handleChange={handleOnChange} required />
 
                                     <InputError message={errors.name} className="mt-2" />
                                 </div>
                                 <div>
                                     <InputLabel value="Email Address"/>
-                                    <TextInput type="email" name="email" placeholder="Your Email Address" value={data.email}  onChange={handleOnChange} required />
+                                    <TextInput type="email" name="email" placeholder="Your Email Address" value={data.email}  handleChange={handleOnChange} required />
 
                                     <InputError message={errors.email} className="mt-2" />
                                 </div>
                                 <div style={{ position: "relative" }}>
                                     <InputLabel value="Password"/>
-                                    <TextInput type="password" name="password" placeholder="Your Password" value={data.password} onChange={handleOnChange} required/>
+                                    <TextInput type="password" name="password" placeholder="Your Password" value={data.password} handleChange={handleOnChange} required/>
 
                                     <InputError message={errors.password} className="mt-2" />
                                 </div>
                                 <div>
                                     <InputLabel value="Confirm Password"/>
-                                    <TextInput type="password" name="password_confirmation" placeholder="Re-type Your Password" value={data.password_confirmation} onChange={handleOnChange} required/>
+                                    <TextInput type="password" name="password_confirmation" placeholder="Re-type Your Password" value={data.password_confirmation} handleChange={handleOnChange} required/>
 
                                     <InputError message={errors.password_confirmation} className="mt-2" />
                                 </div>
